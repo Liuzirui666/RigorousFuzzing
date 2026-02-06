@@ -5,6 +5,7 @@
 
 The structure of our code is: 
 
+```text
 fuzz
 ├── experiment-config.yaml
 └── fuzzbench
@@ -49,4 +50,16 @@ fuzz
     ├── test_libs
     └── third_party
 
+```
+
+## Prerequisites
+
+You will need to setup [Fuzzbench](https://google.github.io/fuzzbench/getting-started/prerequisites/) environment first in order to run local experiments.
+
+## Running Experiments
+
+Setting up the experiments properly within the split folder, and then run
+```bash
+PYTHONPATH=. python3 fuzz/fuzzbench/split/run_multiple.py
+```
 
