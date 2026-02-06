@@ -39,6 +39,7 @@ class FixedTimeSplitPlan:
 
 def default_4split_plan() -> FixedTimeSplitPlan:
     # split at 13.5h, 17h; run until 23h
+    # Do not use. Only for debugging.
     return FixedTimeSplitPlan(checkpoints_hours=[13.5, 17, 23.0])
 
 
