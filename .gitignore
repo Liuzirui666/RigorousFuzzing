@@ -1,0 +1,39 @@
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Build artifacts
+build/
+dist/
+*.o
+*.a
+*.so
+*.dylib
+
+# Logs / tmp
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Coverage / profiling
+*.gcda
+*.gcno
+*.profraw
+*.profdata
+
+# Fuzzing outputs (按你的实际目录名调整)
+out/
+outputs/
+results/
+corpus/
+crashes/
+hangs/
+queue/

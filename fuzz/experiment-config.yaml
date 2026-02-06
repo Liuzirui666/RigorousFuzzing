@@ -1,0 +1,24 @@
+# /fuzz/experiment-config.yaml
+
+# Number of trials per (fuzzer, benchmark) pair.
+# Change if you want fewer/ more.
+trials: 20
+
+# Duration of each trial in seconds.
+# 1 day = 24 * 60 * 60 = 86400
+max_total_time: 82800
+
+# Docker registry string used as image prefix.
+# In local experiments this is only a tag, nothing is pushed.
+docker_registry: gcr.io/fuzzbench
+
+# Where FuzzBench stores raw experiment data (build logs, coverage, crashes, db, ...).
+# Must be an absolute path.
+experiment_filestore: /home/fuzz/experiment-data
+
+# Where FuzzBench writes HTML reports + summary CSVs.
+# Must be an absolute path.
+report_filestore: /home/fuzz/report-data
+
+# Critical: tells FuzzBench we are running locally (no GCP, single machine).
+local_experiment: true
